@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space tourism</title>
+  </head>
+  <body>
+    <main>
+      <div class="destination-background">
+        <div class="navigation">
+          <nav class="nav">
+            <a href="index.html"
+              ><img class="logo" src="assets/shared/logo.svg"
+            /></a>
+            <div
+              class="nav-background-image || destination-background-image"
+            ></div>
+            <button class="nav-close-button">
+              <img src="assets/shared/icon-close.svg" />
+            </button>
+            <ul class="nav-list">
+              <hr />
+              <li>
+                <a href="index.html"
+                  ><span class="nav-numbering">00 </span
+                  ><span class="nav-hover">HOME</span></a
+                >
+              </li>
+              <li>
+                <a href="destination.html"
+                  ><span class="nav-numbering">01 </span
+                  ><span class="active">DESTINATION</span></a
+                >
+              </li>
+              <li>
+                <a href="crew.html"
+                  ><span class="nav-numbering">02 </span
+                  ><span class="nav-hover">CREW</span></a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><span class="nav-numbering">03 </span
+                  ><span class="nav-hover">TECHNOLOGY</span></a
+                >
+              </li>
+            </ul>
+
+            <button class="nav-button">
+              <img src="assets/shared/icon-hamburger.svg" />
+            </button>
+          </nav>
+        </div>
+
+        <div class="destination-content">
+          <p id="pick-destination">
+            <span class="destination-content-number">01</span> PICK YOUR
+            DESTINATION
+          </p>
+
+          <img id="planet-image" src="assets/destination/image-moon.png" />
+
+          <div class="destinations">
+            <ul class="destination-list">
+              <li>
+                <a id="moon" href="#" class="nav-hover">MOON</a>
+              </li>
+              <li>
+                <a id="mars" href="#" class="nav-hover">MARS</a>
+              </li>
+              <li><a id="europa" href="#" class="nav-hover">EUROPA</a></li>
+              <li><a id="titan" href="#" class="nav-hover">TITAN</a></li>
+            </ul>
+            <div class="name-description">
+              <h1 id="planet-name">MOON</h1>
+              <p id="planet-description">
+                See our planet as you’ve never seen it before. A perfect
+                relaxing trip away to help regain perspective and come back
+                refreshed. While you’re there, take in some history by visiting
+                the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </div>
+            <hr />
+            <div class="distance-travel-container">
+              <div class="distance">
+                <p class="distance-travel">AVG. DISTANCE</p>
+                <h3 id="distance">384,400 KM</h3>
+              </div>
+              <div class="travel">
+                <p class="distance-travel">EST. TRAVEL TIME</p>
+                <h3 id="travel-time">3 DAYS</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script defer type="module" src="./main.js"></script>
+  </body>
+</html>
