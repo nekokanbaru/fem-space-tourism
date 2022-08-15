@@ -702,7 +702,7 @@ h2 {
   }
 
   .crew-content {
-    margin-top: 5rem;
+    margin-top: 3rem;
     grid-template-areas:
       "meet"
       "crewText"
@@ -710,6 +710,10 @@ h2 {
       "crewImage";
     gap: 2rem;
     justify-content: center;
+  }
+
+  .buttons {
+    margin-top: 2rem;
   }
 
   .crew-image-container hr {
@@ -727,7 +731,9 @@ h2 {
 
   .crew-image-container img {
     width: initial;
-    aspect-ratio: 1;
+    height: 500px;
+    /* object-fit: cover; */
+    overflow: hidden;
   }
 
   #meet-your-crew {
@@ -736,12 +742,32 @@ h2 {
     letter-spacing: 0.2rem;
   }
 
-  #crew-name {
-    font-size: 2.5rem;
+  .crew-text {
+    gap: 0.5rem;
+    margin: 0 3rem;
+    grid-area: crewText;
+    max-height: 250px;
   }
 
-  .crew-text {
-    max-height: 250px;
+  .crew-content p {
+    font-family: BarlowCondensed-Regular;
+    font-size: 1.3rem;
+  }
+
+  #crew-title {
+    font-family: Bellefair-Regular;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  #crew-name {
+    font-family: Bellefair-Regular;
+    font-size: 2rem;
+  }
+
+  #crew-description {
+    font-size: 1.3rem;
+    max-width: 80ch;
+    max-height: 60px;
   }
 }
 
@@ -766,8 +792,10 @@ h2 {
   }
 
   .crew-image-container img {
-    width: initial;
-    height: initial;
+    width: 40rem;
+    height: 50rem;
+    object-fit: contain;
+    overflow: visible;
   }
 
   .crew-image-container {
@@ -793,6 +821,7 @@ h2 {
   .buttons {
     justify-content: left;
     margin-left: 3rem;
+    margin-top: 5rem;
     z-index: 2;
   }
 
@@ -915,6 +944,10 @@ h2 {
 }
 
 @media (min-width: 50em) {
+  .technology-background {
+    background-image: url(assets/technology/background-technology-tablet.jpg);
+  }
+
   .technology-image-container {
     max-height: 350px;
   }
@@ -936,6 +969,10 @@ h2 {
 }
 
 @media (min-width: 80em) {
+  .technology-background {
+    background-image: url(assets/technology/background-technology-desktop.jpg);
+  }
+
   .technology-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -983,5 +1020,9 @@ h2 {
 
   .technology-image-container picture {
     max-height: initial;
+  }
+
+  #space-launch-101 {
+    margin-left: 10rem;
   }
 }
