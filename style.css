@@ -732,7 +732,6 @@ h2 {
   .crew-image-container img {
     width: initial;
     height: 500px;
-    /* object-fit: cover; */
     overflow: hidden;
   }
 
