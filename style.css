@@ -401,7 +401,7 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 100%;
 }
 
 .destination-content {
@@ -509,6 +509,7 @@ h2 {
 @media (min-width: 50em) {
   .destination-background {
     background-image: url(assets/destination/background-destination-tablet.jpg);
+    height:100vh;
   }
 
   #pick-destination {
